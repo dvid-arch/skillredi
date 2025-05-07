@@ -13,7 +13,8 @@ import Analytics from './pages/dashboard/Analytics';
 import Setting from './pages/dashboard/Setting';
 import DashboardLayout from './layouts/DashboardLayout';
 import Courses from './pages/dashboard/Courses';
-import Roadmap from './pages/dashboard/Roadmap';
+import CourseMap from './pages/dashboard/Roadmap';
+
 
 function App() {
 
@@ -31,7 +32,7 @@ function App() {
             <Route path="analytics" element={<Analytics />} />
             <Route path="courses" element={<Courses />} />
             <Route path="settings" element={<Setting />} />
-            <Route path="road" element={<Roadmap />} />
+            <Route path="road" element={<CourseMap />} />
           </Route>
           <Route path='/un2' element={<CourseRoadmap />} />
           <Route path='/' element={<LandingPage />} />
